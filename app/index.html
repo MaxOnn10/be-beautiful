@@ -4,13 +4,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Be Beautiful Studio</title>
+    <link rel="preload" href="images/light.png" as="image">
+    <link rel="preload" href="fonts/MonumentExtended-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- <link rel="preload" href="fonts/Helvetica.woff2" as="font" type="font/woff2" crossorigin> -->
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
 </head>
 
 <body>
-    
+    <header class="header">
+        <div class="burger-menu">
+            <div class="burger-dot"></div>
+            <div class="burger-dot"></div>
+            <div class="burger-dot"></div>
+        </div>
+        <img class="header__logo" src="images/logo.png" width="100" height="100" alt="">
+        <h1 class="header__title">Be Beautiful<span class="header__title-span">Studio</span></h1>
+        <div class="header__socials">
+            <ul class="header__socials-items">
+                <li class="header__socials-item">
+                    <a class="header__socials-link" href="" target="_blank">Facebook</a>
+                </li>
+                <li class="header__socials-item">
+                    <a class="header__socials-link" href="" target="_blank">Instagram</a>
+                </li>
+                <li class="header__socials-item">
+                    <a class="header__socials-link" href="" target="_blank">Telegram</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="about__container">
+                <div class="about__wrapper">
+                    <!-- <h2 class="about__title">Про нас</h2> -->
+                    <p class="about__description">
+                        У нашому салоні краси ми прагнемо надати нашим клієнтам найкращі косметичні послуги, спираючись
+                        на
+                        нашу пристрасть до краси та прагнення до досконалості. <br>
+                        Ми віримо, що краса — це більше, ніж
+                        просто
+                        поверхнева турбота. Це <u>турбота</u> про себе, <u>самовираження</u> та <u>впевненість</u>
+                        у собі.
+                    </p>
+                </div>
+                <div class="about__img-inner">
+                    <img class="about__img" src="images/interior/2.webp" alt="interior">
+                </div>
+
+            </div>
+
+        </section>
+        <section class="services">
+            <div class="services__items">
+                <div class="services__item">
+                    <div class="services__item-wrapper">
+                        <img class="services__item-img" src="images/services/cleaning-face.JPG" alt="Очищення обличчя">
+                        <div class="services__img-overlay"></div>
+                        <div class="services__item-copy">
+                            <h3 class="services__item-name">
+                                Очищення обличчя
+                            </h3>
+                            <p class="services__item-number">1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-wrapper">
+                        <img class="services__item-img" src="images/services/peelings.JPG" alt="Пілінг">
+                        <div class="services__img-overlay"></div>
+                        <div class="services__item-copy">
+                            <h3 class="services__item-name">
+                                Пілінг
+                            </h3>
+                            <p class="services__item-number">2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-wrapper">
+                        <img class="services__item-img" src="images/services/botulinum-therapy.JPG" alt="Ботулінотерапія">
+                        <div class="services__img-overlay"></div>
+                        <div class="services__item-copy">
+                            <h3 class="services__item-name">
+                                Ботулінотерапія
+                            </h3>
+                            <p class="services__item-number">3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-wrapper">
+                        <img class="services__item-img" src="images/services/lip-augmentation.JPG" alt="Збільшення губ">
+                        <div class="services__img-overlay"></div>
+                        <div class="services__item-copy">
+                            <h3 class="services__item-name">
+                                Збільшення губ
+                            </h3>
+                            <p class="services__item-number">4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="services__items services__items--2">
+                <div class="services__item">
+                    <div class="services__item-wrapper">
+                        <img class="services__item-img" src="images/services/contour-plastic.JPG" alt="Контурна пластика">
+                        <div class="services__img-overlay"></div>
+                        <div class="services__item-copy">
+                            <h3 class="services__item-name">
+                                Контурна пластика
+                            </h3>
+                            <p class="services__item-number">5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-wrapper">
+                        <img class="services__item-img" src="images/services/bioremediation.JPG" alt="Біоремедіація">
+                        <div class="services__img-overlay"></div>
+                        <div class="services__item-copy">
+                            <h3 class="services__item-name">
+                                Біоремедіація
+                            </h3>
+                            <p class="services__item-number">6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__item">
+                    <div class="services__item-wrapper">
+                        <img class="services__item-img" src="images/services/mesotherapy.JPG" alt="Мезотерапія">
+                        <div class="services__img-overlay"></div>
+                        <div class="services__item-copy">
+                            <h3 class="services__item-name">
+                                Мезотерапія
+                            </h3>
+                            <p class="services__item-number">7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        gsap.from(".header__logo", 2, {
+            y: 10,
+            opacity: 0
+            // ease: Expo.easeInOut
+        })
+        // gsap.from(".burger-dot", 2, {
+        //     y: 10,
+        //     opacity: 0,
+        //     // ease: Expo.easeInOut
+        // })
+        gsap.from(".header__title", 2, {
+            delay: 0.7,
+            y: 20,
+            opacity: 0,
+            // ease: Expo.easeInOut
+        })
+        gsap.from(".header__title-span", 2, {
+            delay: 0.7,
+            y: 20,
+            opacity: 0
+            // ease: Expo.easeInOut
+        })
+
+        if (window.innerWidth < 639.98) {
+            gsap.from(".header__socials-item", 2, {
+                delay: 0.4,
+                y: 40,
+                opacity: 0,
+                // stagger: 0.2
+                // ease: Expo.easeInOut
+            });
+        } else {
+            gsap.from(".header__socials-item", 2, {
+                delay: 0.4,
+                x: 40,
+                opacity: 0,
+                stagger: 0.2
+                // ease: Expo.easeInOut
+            })
+        }
+    </script>
     <script src="js/main.min.js"></script>
 </body>
 

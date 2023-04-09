@@ -3,5 +3,27 @@
 }
 
 @media (max-width: 639.98px) {
- //mobile
+    .header{
+        &__title{
+            font-size: 32px;
+        }
+        &__title-sup{
+
+        }
+        &__socials{
+            top: 85%;
+            right: 0;
+            left: 0;
+            transform: none;
+        }
+        &__socials-items{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+        &__socials-item{
+            font-size: 8px;
+            margin-right: 0;
+        }
+    }
 }
