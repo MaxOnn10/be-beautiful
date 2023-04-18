@@ -26,17 +26,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="burger-menu">
             <div class="burger-dot"></div>
             <div class="burger-dot"></div>
             <div class="burger-dot"></div>
         </div>
-        <img class="header__logo" src="images/logo.png" width="100" height="100" alt="">
+        <img class="header__logo" src="images/logo.png" width="100" height="100" alt="KoliadaStudio logo">
         <h1 class="header__title">Be Beautiful<span class="header__title-span">Studio</span></h1>
         <div class="header__socials">
             <ul class="header__socials-items">
@@ -53,8 +54,8 @@
         </div>
     </header>
 
-    <main>
-        <section class="about">
+    <main class="content">
+        <section class="about" id="about">
             <div class="about__container">
                 <div class="about__wrapper">
                     <!-- <h2 class="about__title">Про нас</h2> -->
@@ -75,7 +76,7 @@
             </div>
 
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="container">
                 <h2 class="services__title">Послуги</h2>
             </div>
@@ -171,7 +172,7 @@
             </div>
         </section>
 
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <h2 class="price__title">
                     Ціни
@@ -183,12 +184,17 @@
                         </summary>
                         <div class="price__item-content">
                             <ul class="price__item-description">
-                                <li class="price__item-text">Класичний масаж + альгінатна маска<span class="price__item-cost">500 грн</span></li>
-                                <li class="price__item-text">Ультразвукова чистка обличчя<span class="price__item-cost">500 грн</span></li>
-                                <li class="price__item-text">Гігієнічна комбінована чистка (ультразвук, механічна чистка, альгінатна маска по типу
+                                <li class="price__item-text">Класичний масаж + альгінатна маска<span
+                                        class="price__item-cost">500 грн</span></li>
+                                <li class="price__item-text">Ультразвукова чистка обличчя<span
+                                        class="price__item-cost">500 грн</span></li>
+                                <li class="price__item-text">Гігієнічна комбінована чистка (ультразвук, механічна
+                                    чистка, альгінатна маска по типу
                                     шкіри)<span class="price__item-cost">800 грн</span></li>
-                                <li class="price__item-text">Атравматична чистка Holy Land<span class="price__item-cost">900 грн</span></li>
-                                <li class="price__item-text">Гігієнічна комбінована чистка (ультразвук, механічна чистка, пілінг, маска по типу
+                                <li class="price__item-text">Атравматична чистка Holy Land<span
+                                        class="price__item-cost">900 грн</span></li>
+                                <li class="price__item-text">Гігієнічна комбінована чистка (ультразвук, механічна
+                                    чистка, пілінг, маска по типу
                                     шкіри)<span class="price__item-cost">1200 грн</span></li>
                             </ul>
                         </div>
@@ -199,13 +205,18 @@
                         </summary>
                         <div class="price__item-content">
                             <ul class="price__item-description">
-                                <li class="price__item-text">Азелаїновий<span class="price__item-cost">700 грн</span></li>
-                                <li class="price__item-text">Мигдальний<span class="price__item-cost">700 грн</span></li>
+                                <li class="price__item-text">Азелаїновий<span class="price__item-cost">700 грн</span>
+                                </li>
+                                <li class="price__item-text">Мигдальний<span class="price__item-cost">700 грн</span>
+                                </li>
                                 <li class="price__item-text">Феруловий<span class="price__item-cost">700 грн</span></li>
                                 <li class="price__item-text">Kemikum<span class="price__item-cost">800 грн</span></li>
-                                <li class="price__item-text">ALPHA-BETA retinol Holy Land<span class="price__item-cost">800 грн</span></li>
-                                <li class="price__item-text">Гідропілінг<span class="price__item-cost">1000 грн</span></li>
-                                <li class="price__item-text">BioRePeelC3<span class="price__item-cost">1000 грн</span></li>
+                                <li class="price__item-text">ALPHA-BETA retinol Holy Land<span
+                                        class="price__item-cost">800 грн</span></li>
+                                <li class="price__item-text">Гідропілінг<span class="price__item-cost">1000 грн</span>
+                                </li>
+                                <li class="price__item-text">BioRePeelC3<span class="price__item-cost">1000 грн</span>
+                                </li>
                             </ul>
                         </div>
                     </details>
@@ -215,12 +226,17 @@
                         </summary>
                         <div class="price__item-content">
                             <ul class="price__item-description">
-                                <li class="price__item-text">Додаткові точки («кролячі зморшки», гінгвіальна посмішка, підборіддя, кутики роту)<span class="price__item-cost">1000 грн.</span></li>
-                                <li class="price__item-text">Міжбрів’я<span class="price__item-cost">1500 грн</span></li>
+                                <li class="price__item-text">Додаткові точки («кролячі зморшки», гінгвіальна посмішка,
+                                    підборіддя, кутики роту)<span class="price__item-cost">1000 грн.</span></li>
+                                <li class="price__item-text">Міжбрів’я<span class="price__item-cost">1500 грн</span>
+                                </li>
                                 <li class="price__item-text">Лоб<span class="price__item-cost">2000 грн</span></li>
-                                <li class="price__item-text">Очі («гусячі лапки»)<span class="price__item-cost">2000 грн</span></li>
-                                <li class="price__item-text">3 (три) зони одночасно<span class="price__item-cost">5000 грн</span></li>
-                                <li class="price__item-text">Ліфтинг Ніфертіті (підтяжка шиї і овалу обличчя)<span class="price__item-cost">5500 грн</span></li>
+                                <li class="price__item-text">Очі («гусячі лапки»)<span class="price__item-cost">2000
+                                        грн</span></li>
+                                <li class="price__item-text">3 (три) зони одночасно<span class="price__item-cost">5000
+                                        грн</span></li>
+                                <li class="price__item-text">Ліфтинг Ніфертіті (підтяжка шиї і овалу обличчя)<span
+                                        class="price__item-cost">5500 грн</span></li>
                             </ul>
                         </div>
                     </details>
@@ -230,11 +246,16 @@
                         </summary>
                         <div class="price__item-content">
                             <ul class="price__item-description">
-                                <li class="price__item-text">Neuramis deep<span class="price__item-cost">4000 грн</span></li>
-                                <li class="price__item-text">Croma Saypha Lidocaine<span class="price__item-cost">4500 грн</span></li>
-                                <li class="price__item-text">Juvederm 3<span class="price__item-cost">5500 грн</span></li>
-                                <li class="price__item-text">Stylage M<span class="price__item-cost">5500 грн</span></li>
-                                <li class="price__item-text">Neauvia Lips<span class="price__item-cost">5500 грн</span></li>
+                                <li class="price__item-text">Neuramis deep<span class="price__item-cost">4000 грн</span>
+                                </li>
+                                <li class="price__item-text">Croma Saypha Lidocaine<span class="price__item-cost">4500
+                                        грн</span></li>
+                                <li class="price__item-text">Juvederm 3<span class="price__item-cost">5500 грн</span>
+                                </li>
+                                <li class="price__item-text">Stylage M<span class="price__item-cost">5500 грн</span>
+                                </li>
+                                <li class="price__item-text">Neauvia Lips<span class="price__item-cost">5500 грн</span>
+                                </li>
                             </ul>
                         </div>
                     </details>
@@ -244,9 +265,12 @@
                         </summary>
                         <div class="price__item-content">
                             <ul class="price__item-description">
-                                <li class="price__item-text">Підборіддя Saypha Volume Plus Lidocaine 1мл.<span class="price__item-cost">4500 грн</span></li>
-                                <li class="price__item-text">Скули Saypha Volume Plus Lidocaine 1мл.<span class="price__item-cost">4500 грн</span></li>
-                                <li class="price__item-text">Нижні кути щелепи «Джолі» Saypha Volume Plus Lidocaine 2мл.<span class="price__item-cost">9000 грн</span></li>
+                                <li class="price__item-text">Підборіддя Saypha Volume Plus Lidocaine 1мл.<span
+                                        class="price__item-cost">4500 грн</span></li>
+                                <li class="price__item-text">Скули Saypha Volume Plus Lidocaine 1мл.<span
+                                        class="price__item-cost">4500 грн</span></li>
+                                <li class="price__item-text">Нижні кути щелепи «Джолі» Saypha Volume Plus Lidocaine
+                                    2мл.<span class="price__item-cost">9000 грн</span></li>
                             </ul>
                         </div>
                     </details>
@@ -256,13 +280,20 @@
                         </summary>
                         <div class="price__item-content">
                             <ul class="price__item-description">
-                                <li class="price__item-text">Eldermafill Buster<span class="price__item-cost">1500 грн</span></li>
-                                <li class="price__item-text">Kiara Re Ju<span class="price__item-cost">1600 грн</span></li>
-                                <li class="price__item-text">Rejuran S<span class="price__item-cost">2600 грн</span></li>
-                                <li class="price__item-text">Rejuran I<span class="price__item-cost">2600 грн</span></li>
-                                <li class="price__item-text">Rejuran HB<span class="price__item-cost">2800 грн</span></li>
-                                <li class="price__item-text">Meso-Xanthin<span class="price__item-cost">3800 грн</span></li>
-                                <li class="price__item-text">Meso-Wharton<span class="price__item-cost">3800 грн</span></li>
+                                <li class="price__item-text">Eldermafill Buster<span class="price__item-cost">1500
+                                        грн</span></li>
+                                <li class="price__item-text">Kiara Re Ju<span class="price__item-cost">1600 грн</span>
+                                </li>
+                                <li class="price__item-text">Rejuran S<span class="price__item-cost">2600 грн</span>
+                                </li>
+                                <li class="price__item-text">Rejuran I<span class="price__item-cost">2600 грн</span>
+                                </li>
+                                <li class="price__item-text">Rejuran HB<span class="price__item-cost">2800 грн</span>
+                                </li>
+                                <li class="price__item-text">Meso-Xanthin<span class="price__item-cost">3800 грн</span>
+                                </li>
+                                <li class="price__item-text">Meso-Wharton<span class="price__item-cost">3800 грн</span>
+                                </li>
                             </ul>
                         </div>
                     </details>
@@ -272,10 +303,13 @@
                         </summary>
                         <div class="price__item-content">
                             <ul class="price__item-description">
-                                <li class="price__item-text">Bioskin 2ml<span class="price__item-cost">900 грн</span></li>
+                                <li class="price__item-text">Bioskin 2ml<span class="price__item-cost">900 грн</span>
+                                </li>
                                 <li class="price__item-text">Curenex<span class="price__item-cost">900 грн</span></li>
-                                <li class="price__item-text">Eldermafill<span class="price__item-cost">1200 грн</span></li>
-                                <li class="price__item-text">Коктейль «Monako»<span class="price__item-cost">3600 грн</span></li>
+                                <li class="price__item-text">Eldermafill<span class="price__item-cost">1200 грн</span>
+                                </li>
+                                <li class="price__item-text">Коктейль «Monako»<span class="price__item-cost">3600
+                                        грн</span></li>
                             </ul>
                         </div>
                     </details>
@@ -284,12 +318,67 @@
         </section>
 
         <section class="map">
-            <iframe class="map__content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.154308042956!2d24.707600017443834!3d51.21623299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47243b019f3d6cf1%3A0x7cd71f28f5d3926b!2z0YPQuy4g0JrQvtGB0LDRh9C10LksIDgsINCa0L7QstC10LvRjCwg0JLQvtC70YvQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0NTAwMA!5e0!3m2!1sru!2sua!4v1681326352140!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="map__content"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.154308042956!2d24.707600017443834!3d51.21623299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47243b019f3d6cf1%3A0x7cd71f28f5d3926b!2z0YPQuy4g0JrQvtGB0LDRh9C10LksIDgsINCa0L7QstC10LvRjCwg0JLQvtC70YvQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0NTAwMA!5e0!3m2!1sru!2sua!4v1681326352140!5m2!1sru!2sua"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__items">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-menu">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#header">Головна</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#services">Послуги</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="">Відзнаки</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#price">Ціни</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__time">
+                        <div class="footer__time-wrapper">
+                            <p class="footer__time-title">Графік роботи</p>
+                        <p class="footer__time-weekdays">Понеділок — П’ятниця: <span
+                                class="footer__time-active footer__time-active--1">8.00 — 20.00</span></p>
+                        <p class="footer__time-weekends">Субота — Неділя: <span
+                                class="footer__time-active footer__time-active--2">вихідні</span></p>
+                        </div>
+                    </div>
+                    <div class="footer__socials">
+                        <ul class="footer__socials-items">
+                            <li class="footer__socials-mail"><a class="footer__socials-link" href="mailto:koliadabeautifulstudio@gmail.com">koliadabeautifulstudio@gmail.com</a></li>
+                            <li class="footer__socials-number"><a class="footer__socials-link" href="tel:380990587790">+380 (99) 058 77 90</a></li>
+                            <!-- <li class="footer__socials-address">вул. Косачів, 8, Ковель</li> -->
+                            <li class="footer__socials-media">
+                                <a class="footer__socials-link" href="https://www.instagram.com/"><img
+                                        src="images/instagram.svg" width="24" height="24" alt="instagram"
+                                        target="_blank"></a>
+                                <a class="footer__socials-link" href="https://web.telegram.org/k/"><img
+                                        src="images/telegram.svg" width="24" height="24" alt="telegram"
+                                        target="_blank"></a>
+                                <a class="footer__socials-link" href="https://www.facebook.com/"><img
+                                        src="images/facebook.svg" width="24" height="24" alt="facebook"
+                                        target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__logo">
+                    <img class="footer__logo-img" src="images/logo.png" width="125" height="125"
+                        alt="KoliadaStudio logo">
+                </div>
+                <p class="footer__creator" itemprop="author" itemscope="itemscope"
+                    itemtype="https://schema.org/Person">
+                    <span class="footer__creator-text">Designed and made by</span>
+                    <a href="https://www.google.com/" class="footer__creator-link" itemprop="url" rel="author">
+                        <span class="footer__creator-name" itemprop="name">Max
+                            Melenevsky</span>
+                    </a>
+                </p>
+            </div>
+        </div>
     </footer>
 
     <script>
@@ -303,6 +392,7 @@
         //     opacity: 0,
         //     // ease: Expo.easeInOut
         // })
+
         gsap.from(".header__title", 2, {
             delay: 0.7,
             y: 20,
