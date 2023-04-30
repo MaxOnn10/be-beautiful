@@ -12,10 +12,36 @@
     }
 }
 @media (max-width: 991.98px) {
+    .header{
+        &__nav{
+            flex-direction: column-reverse;
+        }
+        &__menu-item{
+            font-size: 13px;
+        }
+        &__nav-inner{
+            width: 90%;
+            gap: 10px;
+        }
+        &__nav-logo{
+            width: 150px;
+            height: 150px;
+        }
+        // &__nav-left{
+        //     align-items: flex-start;
+        // }
+        &__nav-right{
+            align-items: flex-start;
+        }
+        &__nav-link{
+            // font-size: 14px;
+        }
+    }
     .about {
         &__description {
             font-size: 20px;
             line-height: 24px;
+            gap: 10px;
         }
     }
     .footer {
@@ -49,12 +75,14 @@
 
 @media (max-width: 639.98px) {
     .header {
-        .burger-menu {
-            top: 40px;
-            right: 35px;
+        &__button{
+            right: 25px;
         }
         &__title {
             font-size: 32px;
+        }
+        &__nav-title{
+            font-size: 22px;
         }
         &__title-sup {
         }
