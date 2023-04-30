@@ -1,39 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="
+    Сучасний косметичний салон у Ковелі, що пропонує догляд за шкірою за допомогою передової косметології, використовуючи якісні матеріали, з можливістю онлайн-бронювання - для тих, хто цінує красу.">
+    <meta name="keywords"
+        content="косметичний салон, догляд за шкірою, очищення обличчя, пілінг, ботулінотерапія, збільшення губ, нарощення губ, контурна пластика, біоремедіація, косметологія, мезотерапія, якісні матеріали, професійний майстер, бронювання, краса, Ковель">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
     <title>Be Beautiful Studio</title>
-    <link rel="preload" href="images/light.png" as="image">
+    <link rel="preload" href="images/light.webp" as="image">
     <link rel="preload" href="fonts/MonumentExtended-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <!-- <link rel="preload" href="fonts/Helvetica.woff2" as="font" type="font/woff2" crossorigin> -->
+    <link rel="preload" href="css/libs.min.css" as="style">
+    <link rel="preload" href="css/main.min.css" as="style">
+    <link rel="preload" href="js/main.min.js" as="script">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"> -->
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> -->
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
-
+    <script src="js/circular-revealer.js"></script>
+    <!-- Critical Stytes  -->
+    <style></style>
 </head>
 
 <body>
     <header class="header" id="header">
-        <button class="header__button nav-btn-js">
+        <button class="header__button nav-btn-js" aria-label="burger-button">
         </button>
 
         <nav class="header__nav nav-js" data-active="false">
@@ -44,7 +41,7 @@
                 <div class="header__nav-inner">
                     <!-- col -->
                     <div class="header__nav-left">
-                        <img class="header__nav-logo" src="images/logo.png" width="200" height="200"
+                        <img class="header__nav-logo" src="images/logo.webp" width="200" height="200"
                             alt="Be Beautiful Studio Logo">
                         <ul class="header__nav-socials">
                             <li>
@@ -72,7 +69,7 @@
                 </div>
             </div>
         </nav>
-        <img class="header__logo" src="images/logo.png" width="100" height="100" alt="KoliadaStudio logo">
+        <img class="header__logo" src="images/logo.webp" width="100" height="100" alt="KoliadaStudio logo">
         <h1 class="header__title">Be Beautiful<span class="header__title-span">Studio</span></h1>
         <div class="header__socials">
             <ul class="header__socials-items">
@@ -122,7 +119,8 @@
             <div class="services__items services__items--1">
                 <div class="services__item services__item--1">
                     <div class="services__item-wrapper">
-                        <img class="services__item-img" src="images/services/cleaning-face.JPG" alt="Очищення обличчя">
+                        <img class="services__item-img" src="images/services/cleaning-face.webp" loading="lazy"
+                            alt="Очищення обличчя">
                         <div class="services__img-overlay"></div>
                         <div class="services__item-copy">
                             <h3 class="services__item-name">
@@ -134,7 +132,7 @@
                 </div>
                 <div class="services__item services__item--2">
                     <div class="services__item-wrapper">
-                        <img class="services__item-img" src="images/services/peelings.JPG" alt="Пілінг">
+                        <img class="services__item-img" src="images/services/peelings.webp" loading="lazy" alt="Пілінг">
                         <div class="services__img-overlay"></div>
                         <div class="services__item-copy">
                             <h3 class="services__item-name">
@@ -146,7 +144,7 @@
                 </div>
                 <div class="services__item services__item--3">
                     <div class="services__item-wrapper">
-                        <img class="services__item-img" src="images/services/botulinum-therapy.JPG"
+                        <img class="services__item-img" src="images/services/botulinum-therapy.webp" loading="lazy"
                             alt="Ботулінотерапія">
                         <div class="services__img-overlay"></div>
                         <div class="services__item-copy">
@@ -159,7 +157,8 @@
                 </div>
                 <div class="services__item services__item--4">
                     <div class="services__item-wrapper">
-                        <img class="services__item-img" src="images/services/lip-augmentation.JPG" alt="Збільшення губ">
+                        <img class="services__item-img" src="images/services/lip-augmentation.webp" loading="lazy"
+                            alt="Збільшення губ">
                         <div class="services__img-overlay"></div>
                         <div class="services__item-copy">
                             <h3 class="services__item-name">
@@ -173,7 +172,7 @@
             <div class="services__items services__items--2">
                 <div class="services__item">
                     <div class="services__item-wrapper">
-                        <img class="services__item-img" src="images/services/contour-plastic.JPG"
+                        <img class="services__item-img" src="images/services/contour-plastic.webp" loading="lazy"
                             alt="Контурна пластика">
                         <div class="services__img-overlay"></div>
                         <div class="services__item-copy">
@@ -186,7 +185,7 @@
                 </div>
                 <div class="services__item">
                     <div class="services__item-wrapper">
-                        <img class="services__item-img" src="images/services/bioremediation.JPG" alt="Біоремедіація">
+                        <img class="services__item-img" src="images/services/bioremediation.webp" loading="lazy" alt="Біоремедіація">
                         <div class="services__img-overlay"></div>
                         <div class="services__item-copy">
                             <h3 class="services__item-name">
@@ -198,7 +197,7 @@
                 </div>
                 <div class="services__item">
                     <div class="services__item-wrapper">
-                        <img class="services__item-img" src="images/services/mesotherapy.JPG" alt="Мезотерапія">
+                        <img class="services__item-img" src="images/services/mesotherapy.webp" loading="lazy" alt="Мезотерапія">
                         <div class="services__img-overlay"></div>
                         <div class="services__item-copy">
                             <h3 class="services__item-name">
@@ -218,7 +217,8 @@
                     <div class="awards__item">
                         <div class="awards__item-wrapper">
                             <div class="awards__item-top">
-                                <img class="awards__item-img" src="images/cup.svg" alt="awards-cup">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
                             </div>
                             <div class="awards__item-center">
                                 <p class="awards__item-title">Holy Land / <span>2023</span></p>
@@ -227,7 +227,7 @@
                             <div class="awards__item-bottom">
                                 <dialog class="awards__item-dialog">
                                     <button class="awards__item-button--close" type="reset">&#10006</button>
-                                    <img class="awards__item-picture" src="images/awards/2023/IMG_6236.webp"
+                                    <img class="awards__item-picture" src="images/awards/2023/IMG_6236.webp" loading="lazy"
                                         alt="award-img">
                                 </dialog>
                                 <button class="awards__item-button">Переглянути <span
@@ -238,7 +238,8 @@
                     <div class="awards__item">
                         <div class="awards__item-wrapper">
                             <div class="awards__item-top">
-                                <img class="awards__item-img" src="images/cup.svg" alt="awards-cup">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
                             </div>
                             <div class="awards__item-center">
                                 <p class="awards__item-title">Emet Medicine / <span>2022</span></p>
@@ -247,7 +248,7 @@
                             <div class="awards__item-bottom">
                                 <dialog class="awards__item-dialog">
                                     <button class="awards__item-button--close" type="reset">&#10006</button>
-                                    <img class="awards__item-picture" src="images/awards/2022/IMG_6240.png"
+                                    <img class="awards__item-picture" src="images/awards/2022/IMG_6240.webp" loading="lazy"
                                         alt="award-img">
                                 </dialog>
                                 <button class="awards__item-button">Переглянути <span
@@ -258,7 +259,8 @@
                     <div class="awards__item">
                         <div class="awards__item-wrapper">
                             <div class="awards__item-top">
-                                <img class="awards__item-img" src="images/cup.svg" alt="awards-cup">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
                             </div>
                             <div class="awards__item-center">
                                 <p class="awards__item-title">Mesoestetic / <span>2021</span></p>
@@ -267,7 +269,7 @@
                             <div class="awards__item-bottom">
                                 <dialog class="awards__item-dialog">
                                     <button class="awards__item-button--close" type="reset">&#10006</button>
-                                    <img class="awards__item-picture" src="images/awards/2021/IMG_6243.webp"
+                                    <img class="awards__item-picture" src="images/awards/2021/IMG_6243.webp" loading="lazy"
                                         alt="award-img">
                                 </dialog>
                                 <button class="awards__item-button">Переглянути <span
@@ -278,7 +280,8 @@
                     <div class="awards__item">
                         <div class="awards__item-wrapper">
                             <div class="awards__item-top">
-                                <img class="awards__item-img" src="images/cup.svg" alt="awards-cup">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
                             </div>
                             <div class="awards__item-center">
                                 <p class="awards__item-title">Christina / <span>2021</span></p>
@@ -287,7 +290,7 @@
                             <div class="awards__item-bottom">
                                 <dialog class="awards__item-dialog">
                                     <button class="awards__item-button--close" type="reset">&#10006</button>
-                                    <img class="awards__item-picture" src="images/awards/2021/IMG_6247.webp"
+                                    <img class="awards__item-picture" src="images/awards/2021/IMG_6247.webp" loading="lazy"
                                         alt="award-img">
                                 </dialog>
                                 <button class="awards__item-button">Переглянути <span
@@ -298,7 +301,8 @@
                     <div class="awards__item">
                         <div class="awards__item-wrapper">
                             <div class="awards__item-top">
-                                <img class="awards__item-img" src="images/cup.svg" alt="awards-cup">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
                             </div>
                             <div class="awards__item-center">
                                 <p class="awards__item-title">Dr.Kadir / <span>2021</span></p>
@@ -307,7 +311,7 @@
                             <div class="awards__item-bottom">
                                 <dialog class="awards__item-dialog">
                                     <button class="awards__item-button--close" type="reset">&#10006</button>
-                                    <img class="awards__item-picture" src="images/awards/2021/IMG_6249.webp"
+                                    <img class="awards__item-picture" src="images/awards/2021/IMG_6249.webp" loading="lazy"
                                         alt="award-img">
                                 </dialog>
                                 <button class="awards__item-button">Переглянути <span
@@ -318,7 +322,8 @@
                     <div class="awards__item">
                         <div class="awards__item-wrapper">
                             <div class="awards__item-top">
-                                <img class="awards__item-img" src="images/cup.svg" alt="awards-cup">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
                             </div>
                             <div class="awards__item-center">
                                 <p class="awards__item-title">Emet Medicine / <span>2021</span></p>
@@ -327,7 +332,7 @@
                             <div class="awards__item-bottom">
                                 <dialog class="awards__item-dialog">
                                     <button class="awards__item-button--close" type="reset">&#10006</button>
-                                    <img class="awards__item-picture" src="images/awards/2021/IMG_6253.webp"
+                                    <img class="awards__item-picture" src="images/awards/2021/IMG_6253.webp" loading="lazy"
                                         alt="award-img">
                                 </dialog>
                                 <button class="awards__item-button">Переглянути <span
@@ -338,7 +343,8 @@
                     <div class="awards__item">
                         <div class="awards__item-wrapper">
                             <div class="awards__item-top">
-                                <img class="awards__item-img" src="images/cup.svg" alt="awards-cup">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
                             </div>
                             <div class="awards__item-center">
                                 <p class="awards__item-title">Skin / <span>2021</span></p>
@@ -347,7 +353,7 @@
                             <div class="awards__item-bottom">
                                 <dialog class="awards__item-dialog">
                                     <button class="awards__item-button--close" type="reset">&#10006</button>
-                                    <img class="awards__item-picture" src="images/awards/2021/IMG_6244.webp"
+                                    <img class="awards__item-picture" src="images/awards/2021/IMG_6244.webp" loading="lazy"
                                         alt="award-img">
                                 </dialog>
                                 <button class="awards__item-button">Переглянути <span
@@ -358,7 +364,8 @@
                     <div class="awards__item">
                         <div class="awards__item-wrapper">
                             <div class="awards__item-top">
-                                <img class="awards__item-img" src="images/cup.svg" alt="awards-cup">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
                             </div>
                             <div class="awards__item-center">
                                 <p class="awards__item-title">«Royal Club» Academy / <span>2020</span></p>
@@ -367,7 +374,28 @@
                             <div class="awards__item-bottom">
                                 <dialog class="awards__item-dialog">
                                     <button class="awards__item-button--close" type="reset">&#10006</button>
-                                    <img class="awards__item-picture" src="images/awards/2020/IMG_6238.webp"
+                                    <img class="awards__item-picture" src="images/awards/2020/IMG_6238.webp" loading="lazy"
+                                        alt="award-img">
+                                </dialog>
+                                <button class="awards__item-button">Переглянути <span
+                                        class="awards__item-arrow">➜</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="awards__item">
+                        <div class="awards__item-wrapper">
+                            <div class="awards__item-top">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
+                            </div>
+                            <div class="awards__item-center">
+                                <p class="awards__item-title">Космотрейд / <span>2019</span></p>
+                                <p class="awards__item-name">Мезотерапія</p>
+                            </div>
+                            <div class="awards__item-bottom">
+                                <dialog class="awards__item-dialog">
+                                    <button class="awards__item-button--close" type="reset">&#10006</button>
+                                    <img class="awards__item-picture" src="images/awards/2019/IMG_6235.webp" loading="lazy"
                                         alt="award-img">
                                 </dialog>
                                 <button class="awards__item-button">Переглянути <span
@@ -385,7 +413,7 @@
                 <!-- LightWidget WIDGET -->
                 <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
                     src="//lightwidget.com/widgets/cdc30a41a8df54e4aa3e5b233536dd65.html" scrolling="no"
-                    allowtransparency="true" class="lightwidget-widget"
+                    allowtransparency="true" title="lightwidget-widget" class="lightwidget-widget"
                     style="width:100%;border:0;overflow:hidden;"></iframe>
             </div>
         </section>
@@ -538,7 +566,7 @@
         <section class="map" id="map">
             <iframe class="map__content"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.154308042956!2d24.707600017443834!3d51.21623299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47243b019f3d6cf1%3A0x7cd71f28f5d3926b!2z0YPQuy4g0JrQvtGB0LDRh9C10LksIDgsINCa0L7QstC10LvRjCwg0JLQvtC70YvQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA0NTAwMA!5e0!3m2!1sru!2sua!4v1681326352140!5m2!1sru!2sua"
-                style="border:0;" allowfullscreen="" loading="lazy"
+                style="border:0;" title="google map" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
@@ -561,7 +589,7 @@
                             <p class="footer__time-weekdays">Понеділок — П’ятниця: <span
                                     class="footer__time-active footer__time-active--1">8.00 — 20.00</span></p>
                             <p class="footer__time-weekends">Субота — Неділя: <span
-                                    class="footer__time-active footer__time-active--2">вихідні</span></p>
+                                    class="footer__time-active footer__time-active--2">по домовленості</span></p>
                         </div>
                     </div>
                     <div class="footer__socials">
@@ -587,7 +615,7 @@
                     </div>
                 </div>
                 <div class="footer__logo">
-                    <img class="footer__logo-img" src="images/logo.png" width="125" height="125"
+                    <img class="footer__logo-img" src="images/logo.webp" width="125" height="125"
                         alt="KoliadaStudio logo">
                 </div>
                 <p class="footer__creator" itemprop="author" itemscope="itemscope" itemtype="https://schema.org/Person">
@@ -616,7 +644,7 @@
         gsap.from(".header__title", 2, {
             delay: 0.7,
             y: 20,
-            opacity: 0,
+            opacity: 0
             // ease: Expo.easeInOut
         })
         gsap.from(".header__title-span", 2, {
@@ -625,6 +653,20 @@
             opacity: 0
             // ease: Expo.easeInOut
         })
+        // gsap.from(".about__description", {
+        //     delay: 0.7,
+        //     y: 20,
+        //     opacity: 0
+        // })
+        ScrollTrigger.create({
+            trigger: ".about__description", // Элемент, который мы хотим анимировать
+            start: "top center", // Момент начала анимации
+            onEnter: () => {
+                // Запускаем анимацию элемента с помощью GSAP
+                gsap.to(".about__description", { opacity: 1, y: 0, duration: 1 });
+            },
+            once: true // Триггер выполнится только один раз
+        });
 
         if (window.innerWidth < 639.98) {
             gsap.from(".header__socials-item", 2, {

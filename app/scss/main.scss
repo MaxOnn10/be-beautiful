@@ -160,16 +160,12 @@
   width: 100%;
   height: 100vh;
   background-color: var(--black);
-  background-image: url("../images/light.png");
+  background-image: url("../images/light.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   position: relative;
 
-
-
-
-  
   &__logo {
     filter: invert(1);
   }
@@ -283,7 +279,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("../images/star-s.png");
+      background: url("../images/star-s.webp");
       background-repeat: no-repeat;
       top: -45px;
       left: -55px;
@@ -394,7 +390,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("../images/star-s.png");
+      background: url("../images/star-s.webp");
       background-repeat: no-repeat;
       filter: invert(1);
       top: -45px;
@@ -488,7 +484,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("../images/star-s.png");
+      background: url("../images/star-s.webp");
       background-repeat: no-repeat;
       filter: invert(1);
       top: -45px;
@@ -567,7 +563,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: url("../images/star-s.png");
+      background: url("../images/star-s.webp");
       background-repeat: no-repeat;
       top: -45px;
       left: -55px;
@@ -590,7 +586,7 @@
   margin-top: -5px;
   width: 100%;
   background-color: var(--black);
-  background-image: url(../images/light.png);
+  background-image: url(../images/light.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
