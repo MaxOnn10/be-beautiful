@@ -42,6 +42,18 @@ function styles() {
         .pipe(browserSync.stream())
 }
 
+function criticalStyles() {
+    return src("./app/scss/critical.scss")
+    .pipe(scss({outputStyle: "compressed"}))
+    .pipe(concat("critical.min.css"))
+     .pipe(autoprefixer({
+         overrideBrowserslist: ['last 10 versions']
+        //  grid: true
+     }))
+    .pipe(dest("app/css"))
+    .pipe(browserSync.stream())
+}
+
 function stylesSecondary() {
     src([
         "node_modules/normalize.css/normalize.css"
@@ -114,6 +126,7 @@ function watching() {
 
 
 exports.styles = styles;
+exports.criticalStyles = criticalStyles;
 exports.stylesSecondary = stylesSecondary;
 exports.watching = watching;
 exports.browsersync = browsersync;
@@ -123,4 +136,4 @@ exports.cleanDist = cleanDist;
 exports.htmlInclude = htmlInclude;
 
 exports.build = series(cleanDist, images, build);
-exports.default = parallel(htmlInclude, styles, stylesSecondary, browsersync, watching);
+exports.default = parallel(htmlInclude, styles, stylesSecondary, criticalStyles, browsersync, watching);
