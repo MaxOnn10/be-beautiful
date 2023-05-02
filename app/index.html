@@ -410,11 +410,18 @@
         <section class="feed" id="feed">
             <div class="feed__container">
                 <h2 class="feed__title">Наша робота</h2>
-                <!-- LightWidget WIDGET -->
-                <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe
-                    src="//lightwidget.com/widgets/cdc30a41a8df54e4aa3e5b233536dd65.html" scrolling="no"
-                    allowtransparency="true" title="lightwidget-widget" class="lightwidget-widget"
-                    style="width:100%;border:0;overflow:hidden;"></iframe>
+                <!-- Place <div> tag where you want the feed to appear -->
+                <div id="curator-feed-default-feed-layout">
+                    <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+                </div>
+                <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+                    (function(){
+                        var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+                        i.src="https://cdn.curator.io/published/807fe1ae-9b57-4d68-a8eb-6d17f780ea77.js";
+                        e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+                    })();
+                </script>
             </div>
         </section>
 
